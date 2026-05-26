@@ -14,13 +14,18 @@ st.markdown("---")
 DASHBOARDS = {
     "Sales Dashboard": {
         "url": "https://public.tableau.com/views/SalesDashboardUsingSampleSuperstore_17111719024770/SalesDashboard",
-        "description": "Sales performance dashboard using Sample Superstore data By Saad.",
+        "description": "Sales performance dashboard using Sample Superstore data.",
         "height": 800,
     },
     "HR Dashboard": {
         "url": "https://public.tableau.com/views/HrDashboardBySaad/Dashboard1",
         "description": "HR analytics dashboard by Saad.",
         "height": 800,
+    },
+    "Market Dashboard": {
+        "url": "https://public.tableau.com/views/MarketDashboard_17111697400600/KPIOverview",
+        "description": "Market KPI overview and performance metrics.",
+        "height": 820,
     },
 }
 
