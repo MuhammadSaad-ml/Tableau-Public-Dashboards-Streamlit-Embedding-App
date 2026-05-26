@@ -14,7 +14,7 @@ st.markdown("---")
 DASHBOARDS = {
     "Sales Dashboard": {
         "url": "https://public.tableau.com/views/SalesDashboardUsingSampleSuperstore_17111719024770/SalesDashboard",
-        "description": "Sales performance dashboard using Sample Superstore data.",
+        "description": "Sales performance dashboard using Sample Superstore data By Saad.",
         "height": 800,
     },
     "HR Dashboard": {
@@ -33,7 +33,7 @@ def embed_tableau(url: str, height: int = 800):
             src="{url}"
             width="100%"
             height="{height}px"
-            toolbar="bottom"
+            toolbar="hidden"
             hide-tabs>
         </tableau-viz>
     </div>
