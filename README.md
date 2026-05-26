@@ -1,10 +1,6 @@
 <img src="https://img.shields.io/badge/Framework-Streamlit-yellow"> <img src="https://img.shields.io/badge/Build_with-Python-red"> <img src="https://img.shields.io/badge/Webapp-Interactive-purple"> <img src="https://img.shields.io/badge/Data_Viz-Tableau_Public-blue"> <img src="https://img.shields.io/badge/Embedding_API-v3-brightgreen"> <img src="https://img.shields.io/badge/Open_Source-Yes-brightgreen"> <img src="https://img.shields.io/badge/Beginner_Friendly-Yes-blue"> <img src="https://img.shields.io/badge/End--to--End-Dashboard_Project-gold">
-
 <img src="https://img.shields.io/badge/Sales-Analytics-orange"> <img src="https://img.shields.io/badge/HR-Analytics-hotpink">
-
-<img src="https://img.shields.io/badge/Pandas-Data_Analysis-orange"> <img src="https://img.shields.io/badge/Streamlit_Components-HTML_Embed-f7931e"> <img src="https://img.shields.io/badge/Tableau-Public_Dashboards-3f4f75">
-
-<img src="https://img.shields.io/badge/VS_Code-IDE-blueviolet"> <img src="https://img.shields.io/badge/Anaconda-Environment-a8b59c">
+<img src="https://img.shields.io/badge/Pandas-Data_Analysis-orange"> <img src="https://img.shields.io/badge/Streamlit_Components-HTML_Embed-f7931e"> <img src="https://img.shields.io/badge/Tableau-Public_Dashboards-3f4f75"> <img src="https://img.shields.io/badge/VS_Code-IDE-blueviolet"> <img src="https://img.shields.io/badge/Anaconda-Environment-a8b59c">
 
 ---
 
