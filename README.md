@@ -1,4 +1,10 @@
-<img src="https://img.shields.io/badge/Framework-Streamlit-yellow"> <img src="https://img.shields.io/badge/Build_with-Python-red"> <img src="https://img.shields.io/badge/Webapp-Interactive-purple"> <img src="https://img.shields.io/badge/Data_Viz-Tableau_Public-blue"> <img src="https://img.shields.io/badge/Embedding_API-v3-brightgreen"> <img src="https://img.shields.io/badge/Open_Source-Yes-brightgreen"> <img src="https://img.shields.io/badge/Beginner_Friendly-Yes-blue"> <img src="https://img.shields.io/badge/End--to--End-Dashboard_Project-gold"> <img src="https://img.shields.io/badge/Sales-Analytics-orange"> <img src="https://img.shields.io/badge/HR-Analytics-hotpink"> <img src="https://img.shields.io/badge/Pandas-Data_Analysis-orange"> <img src="https://img.shields.io/badge/Streamlit_Components-HTML_Embed-f7931e"> <img src="https://img.shields.io/badge/Tableau-Public_Dashboards-3f4f75"> <img src="https://img.shields.io/badge/VS_Code-IDE-blueviolet"> <img src="https://img.shields.io/badge/Anaconda-Environment-a8b59c">
+<img src="https://img.shields.io/badge/Framework-Streamlit-yellow"> <img src="https://img.shields.io/badge/Build_with-Python-red"> <img src="https://img.shields.io/badge/Webapp-Interactive-purple"> <img src="https://img.shields.io/badge/Data_Viz-Tableau_Public-blue"> <img src="https://img.shields.io/badge/Embedding_API-v3-brightgreen"> <img src="https://img.shields.io/badge/Open_Source-Yes-brightgreen"> <img src="https://img.shields.io/badge/Beginner_Friendly-Yes-blue"> <img src="https://img.shields.io/badge/End--to--End-Dashboard_Project-gold">
+
+<img src="https://img.shields.io/badge/Sales-Analytics-orange"> <img src="https://img.shields.io/badge/HR-Analytics-hotpink"> <img src="https://img.shields.io/badge/Market-Analytics-teal">
+
+<img src="https://img.shields.io/badge/Streamlit_Components-HTML_Embed-f7931e"> <img src="https://img.shields.io/badge/Tableau-Public_Dashboards-3f4f75"> <img src="https://img.shields.io/badge/Toolbar-Hidden-lightgrey">
+
+<img src="https://img.shields.io/badge/VS_Code-IDE-blueviolet"> <img src="https://img.shields.io/badge/Anaconda-Environment-a8b59c">
 
 ---
 
@@ -6,10 +12,11 @@
 
 This repository contains an interactive **Tableau Dashboard Viewer** built using **Streamlit**.
 
-The application embeds **live Tableau Public dashboards** directly in the browser using the modern **Tableau Embedding API v3**, covering two real-world analytics domains:
+The application embeds **live Tableau Public dashboards** directly in the browser using the modern **Tableau Embedding API v3**, covering three real-world analytics domains:
 
 - 💼 **Sales Dashboard** — Sales performance analysis using Sample Superstore data
 - 👥 **HR Dashboard** — Human resources analytics by Saad
+- 📈 **Market Dashboard** — Market KPI overview and performance metrics
 
 The project demonstrates how to integrate **Tableau Public visualizations** into a clean, navigable **Streamlit web application** — deployable for free on Streamlit Community Cloud.
 
@@ -24,7 +31,7 @@ The project demonstrates how to integrate **Tableau Public visualizations** into
 ## ✨ Features
 
 ### 🗂 Multi-Dashboard Navigation
-- Sidebar navigation to switch between dashboards instantly
+- Sidebar navigation to switch between **3 dashboards** instantly
 - Each dashboard loads with its own title and description
 
 ### 📊 Live Tableau Embeds
@@ -42,6 +49,17 @@ Analyses workforce metrics including:
 - Headcount and department breakdowns
 - Employee performance indicators
 - Attrition and retention insights
+
+### 📈 Market Dashboard
+Covers market KPI metrics including:
+- KPI overview and benchmarks
+- Market performance trends
+- Business intelligence reporting
+
+### 🔒 Toolbar Hidden
+- Download, share, and data buttons are **not visible** to viewers
+- Clean, distraction-free embed experience
+- Users can interact with filters and tooltips only
 
 ### ⚡ Modern Embedding
 - Uses **Tableau Embedding API v3** (`<tableau-viz>` web component)
@@ -73,6 +91,7 @@ Main Streamlit application file containing:
 - Sidebar navigation between dashboards
 - Tableau Embedding API v3 HTML component
 - Dashboard metadata (URL, title, description, height)
+- Toolbar hidden configuration
 - Responsive layout configuration
 
 > Easily extendable — add new dashboards by adding entries to the `DASHBOARDS` dictionary.
@@ -91,8 +110,8 @@ Includes:
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/tableau-streamlit.git
-cd tableau-streamlit
+git clone https://github.com/MuhammadSaad-ml/Tableau-Public-Dashboards-Streamlit-Embedding-App.git
+cd Tableau-Public-Dashboards-Streamlit-Embedding-App
 ```
 
 ### 2. Create a virtual environment (recommended)
@@ -151,14 +170,17 @@ To find your Tableau Public URL, take the `host_url` + `name` params from the em
 1. Tableau Public hosts your viz at a public URL
 2. Streamlit renders an HTML component using `streamlit.components.v1`
 3. The **Tableau Embedding API v3** (`<tableau-viz>` web component) loads the viz inline
-4. The dashboard is fully interactive — filters, tooltips, and drill-downs all work
+4. `toolbar="hidden"` removes all download and share buttons
+5. The dashboard is fully interactive — filters, tooltips, and drill-downs all work
 
 ---
 
 ## 🕒 Version History
 
 - **Initial Commit** — Base Streamlit app with two Tableau dashboard embeds
-- **README Added** — Full documentation and deployment guide
+- **Market Dashboard Added** — Third dashboard (Market KPI Overview) included
+- **Toolbar Hidden** — Download and share buttons removed from all embeds
+- **README Updated** — Documentation updated to reflect all changes
 
 ---
 
@@ -166,6 +188,7 @@ To find your Tableau Public URL, take the `host_url` + `name` params from the em
 - Dashboards must be published to **Tableau Public** for this embed method to work
 - Ensure your Tableau viz URL matches the `name` param from the embed code exactly
 - The app is best viewed on a **widescreen layout** — set in `st.set_page_config`
+- Even with toolbar hidden, the underlying Tableau Public URL remains publicly accessible
 
 ---
 
